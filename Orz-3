@@ -1,0 +1,94 @@
+# Quantumult X小白配置 制作 by Orz-3 TG频道：t.me/Orzmini 2025/4/10更新
+
+[general]
+network_check_url = http://www.apple.com/library/test/success.html
+server_check_url=http://cp.cloudflare.com/generate_204
+dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+resource_parser_url = https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+excluded_routes=239.255.255.250/32
+fallback_udp_policy = reject
+udp_drop_list = 443
+icmp_auto_reply = true
+
+[dns]
+no-ipv6
+server=119.29.29.29
+server=180.184.1.1
+server=223.5.5.5
+address=/mtalk.google.com/108.177.125.188
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/update.googleapis.com/119.29.29.29
+server=/*.dl.playstation.net/119.29.29.29
+circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0, 61.160.148.90, 182.43.124.6, 124.236.16.201, 39.102.194.95, 36.135.17.248, 36.135.82.110, 39.105.1.17, 39.130.181.72, 39.130.181.73, 39.173.74.185, 47.92.198.202, 111.22.226.1, 111.28.0.32, 111.31.192.110, 111.44.246.131, 111.56.127.216, 111.63.132.170, 112.15.232.43, 112.17.14.211, 112.54.50.50, 117.156.25.11, 117.187.10.42, 120.202.17.103, 120.209.204.204, 120.222.19.204, 121.4.135.105,183.203.36.19, 183.207.72.18, 183.213.92.2, 183.220.145.129, 183.252.183.9, 211.137.133.69, 211.138.218.190, 211.139.25.61, 211.139.145.129, 218.201.25.129, 218.201.25.130, 218.203.122.98, 221.130.39.3
+circumvent-ipv6-answer = ::
+
+[policy]
+static=全球加速, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=苹果服务, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=港台番剧, 香港节点, 台湾节点, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png
+static=国际媒体, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+static=电报代理, 狮城节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+static=黑白名单, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+static=特殊节点, server-tag-regex=^(?!.*(港|台|日|韩|坡|美|HK|US|TW|JP|KR|SG|Hong|Tai|Japan|Korea|Singapore|States)), img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+url-latency-benchmark=香港节点, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=韩国节点, server-tag-regex=(?=.*(韩|韓|朝|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
+url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|兰|美)).)*$, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+
+[server_remote]
+https://dy.okpay.icu/user/server_detail/WyJGYW5uaWUiLCJwYmtkZjJfc2hhMjU2JDMwMDAwJFZQTGwzZkxrSVRGMSRKNjVGWTFPS0RtNTZlOVk4SEVscHJhMU5kR2N2b0k2QWtvamVITUJWM1lFPSJd:1qw2lj:zKBI9sxVBDKbRzuFqTfOMbTC4iA, tag=suannai, update-interval=172800, opt-parser=true, enabled=true
+
+[filter_remote]
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+.list, tag=直连修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list, tag=隐私保护, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/Video/TikTok.list, tag=海外抖音, force-policy=全球加速, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Google/GoogleVoice.list, tag=谷歌语音, force-policy=美国节点, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Telegram.list, tag=电报代理, force-policy=电报代理, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/!CN.list, tag=国际媒体, force-policy=国际媒体, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Streaming/CN.list, tag=港台番剧, force-policy=港台番剧, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Proxy.list, tag=全球加速, force-policy=全球加速, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=苹果服务, force-policy=苹果服务, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/WeChat.list, tag=微信直连, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Proxy+.list, tag=代理修正, force-policy=proxy, update-interval=172800, opt-parser=true, enabled=true
+
+[rewrite_remote]
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub Store, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Module/Block/YouTubeAds.sgmodule, tag=YouTube去广告, update-interval=172800, opt-parser=true, enabled=true
+https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf, tag=墨鱼去开屏, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/tieba-qx.conf, tag=贴吧去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Module/Block/Advertising.sgmodule, tag=神机去广告, update-interval=172800, opt-parser=true, enabled=true
+
+[server_local]
+
+[filter_local]
+host-suffix, local, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+geoip, cn, direct
+final, 黑白名单
+
+[rewrite_local]
+^https?:\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
+
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
+
+[http_backend]
+
+[mitm]
+passphrase = DB21F508
+p12 = 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
